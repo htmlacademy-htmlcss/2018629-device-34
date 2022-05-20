@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Интернет-магазин «Девайс»</title>
   </head>
   <body>
     <header class="page-header">
@@ -10,18 +10,17 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">
-              <span class="visually-hidden">
-                Логотип
-              </span>
+              <img class="logo" src="" alt="Логотип Интернет-магазина «Девайс»">
             </a>
           </li>
           <li class="navigation-item">
-            <form class="search" action="#">
-                <label>
-                  Поиск
-                  <input type="text" name="search">
+            <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="search">
+                  <span class="visually-hidden">Поиск</span>
                 </label>
-                <button type="submit" value="Найти">Найти</button>
+                  <input type="text" name="search" id="search" placeholder="Текст поиска">
+                
+                <button class="submit-button" type="submit" value="Найти">Найти</button>
             </form>
           </li>
           <li class="navigation-item">
@@ -50,7 +49,87 @@
         </ul>
       </nav>
     </header>
+    <main class="main-index">
+      <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">Примеры товаров</h2>
+        <ol class="slider-list">
+          <li class="slider-item">
+            <h3 class="visually-hidden">Квадрокоптер</h3>
+            <img src="" alt="Квадрокоптер с мощным лазером">
+            <p class="slider-item-slogan">Порхает как бабочка, жалит как пчела!</p>
+            <p class="slider-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a href="#" class="button">Подробнее</a>
+            <dl class="slider-item-features">
+              <dt class="slider-item-feature-name">Дальность полета</dt>
+              <dd class="slider-item-feature-value">800 м</dd>
+              <dt class="slider-item-feature-name">Радиус поражения</dt>
+              <dd class="slider-item-feature-value">50 м</dd>
+            </dl>
+          </li>
+          <li class="slider-item">
+            <h3 class="visually-hidden">Фитнес-браслет</h3>
+            <img src="" alt="Мотивирующий Фитнес-браслет">
+            <p class="slider-item-slogan">Худеем правильно!</p>
+            <p class="slider-item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+            </p>
+            <a href="#" class="button">Подробнее</a>
+            <dl class="slider-item-features">
+              <dt class="slider-item-feature-name">Без подзарядки</dt>
+              <dd class="slider-item-feature-value">48 часов</dd>
+            </dl>
+          </li>
+          <li class="slider-item">
+            <h3 class="visually-hidden">Селфи-палка</h3>
+            <img src="" alt="Самая длинная палка для селфи">
+            <p class="slider-item-slogan">Делай селфи, как Бен Стиллер! </p>
+            <p class="slider-item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+
+            </p>
+            <a href="#" class="button">Подробнее</a>
+            <dl class="slider-item-features">
+              <dt class="slider-item-feature-name">Длина палки</dt>
+              <dd class="slider-item-feature-value">8,5 м</dd>
+              <dt class="slider-item-feature-name">Вес палки</dt>
+              <dd class="slider-item-feature-value">5 кг</dd>
+              <dt class="slider-item-feature-name">Материал</dt>
+              <dd class="slider-item-feature-value">Карбон</dd>
+            </dl>
+          </li>
+        </ol>
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 слайд</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 слайд</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 слайд</span>
+            </button>
+          </li>
+        </ol>
+
+      </section>
+
+    </main>
     
+    <footer class="page-footer">
+
+    </footer>
 
   </body>
 </html>
