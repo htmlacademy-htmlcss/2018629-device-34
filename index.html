@@ -6,47 +6,42 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation">
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
-              <img class="logo" src="" alt="Логотип Интернет-магазина «Девайс»">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="search">
-                  <span class="visually-hidden">Поиск</span>
-                </label>
-                  <input type="text" name="search" id="search" placeholder="Текст поиска">
+      <a class="navigation-link" href="index.html">
+        <img class="logo" src="" alt="Логотип Интернет-магазина «Девайс».">
+      </a>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="search">
+         <span class="visually-hidden">Поиск</span>
+        </label>
+        <input type="text" name="search" id="search" placeholder="Текст поиска">
+        <button class="submit-button" type="submit">Найти</button>
+      </form>
+      <ul class="navigation-user">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Войти</a>
+        </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Сравнить</a>
+        </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Корзина</a>
+          <span class="basket-items-number">2</span>
+        </li>
+      </ul>
 
-                <button class="submit-button" type="submit" value="Найти">Найти</button>
-            </form>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
+            <a class="navigation-link" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
+            <a class="navigation-link" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
-            <span class="basket-items-number">2</span>
-          </li>
-        </ul>
-        <ul class="navigation-services-list">
-          <li class="navigation-services-item">
-            <a class="navigation-services-link" href="catalog.html">Каталог товаров</a>
-            <!--Тут должна быть кнопка с плюсом, но, кажется, она скорее иконка-->
-          </li>
-          <li class="navigation-services-item">
-            <a class="navigation-services-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-services-item">
-            <a class="navigation-services-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-services-item">
-            <a class="navigation-services-link" href="#">Контакты</a>
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -56,11 +51,11 @@
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <section class="slider">
         <h2 class="visually-hidden">Примеры товаров</h2>
-        <ol class="slider-list">
-          <li class="slider-item">
+        <div class="slider-list">
+          <div class="slider-item">
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <span class="slider-number">01</span>
-            <img class="slider-item-image" src="" alt="Квадрокоптер с мощным лазером">
+            <img class="slider-item-image" src="" alt="Квадрокоптер с мощным лазером.">
             <p class="slider-item-slogan">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider-item-description">
               Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -73,11 +68,11 @@
               <dt class="slider-item-feature-name">Радиус поражения</dt>
               <dd class="slider-item-feature-value">50 м</dd>
             </dl>
-          </li>
-          <li class="slider-item">
+          </div>
+          <div class="slider-item">
             <h3 class="visually-hidden">Фитнес-браслет</h3>
             <span class="slider-number">02</span>
-            <img class="slider-item-image" src="" alt="Мотивирующий Фитнес-браслет">
+            <img class="slider-item-image" src="" alt="Мотивирующий Фитнес-браслет.">
             <p class="slider-item-slogan">Худеем правильно!</p>
             <p class="slider-item-description">
               Мотивирующие фитнес-браслеты помогут найти в себе силы
@@ -88,16 +83,15 @@
               <dt class="slider-item-feature-name">Без подзарядки</dt>
               <dd class="slider-item-feature-value">48 часов</dd>
             </dl>
-          </li>
-          <li class="slider-item">
+          </div>
+          <div class="slider-item">
             <h3 class="visually-hidden">Селфи-палка</h3>
             <span class="slider-number">03</span>
-            <img class="slider-item-image" src="" alt="Самая длинная палка для селфи">
+            <img class="slider-item-image" src="" alt="Самая длинная палка для селфи.">
             <p class="slider-item-slogan">Делай селфи, как Бен Стиллер! </p>
             <p class="slider-item-description">
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-
             </p>
             <a class="button" href="#">Подробнее</a>
             <dl class="slider-item-features">
@@ -108,8 +102,8 @@
               <dt class="slider-item-feature-name">Материал</dt>
               <dd class="slider-item-feature-value">Карбон</dd>
             </dl>
-          </li>
-        </ol>
+          </div>
+        </div>
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
         </button>
@@ -260,22 +254,15 @@
     </main>
 
     <footer class="page-footer">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts-link" href="index.html">
-          <img class="logo footer-logo" src="" alt="Логотип Интернет-магазина «Девайс»">
-        </a>
-        <address class="footer-contacts-addres">
-          <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a class="footer-contacts-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-        </address>
-       <p class="copyright">
-          <a class="footer-contacts-link" href="https://htmlacademy.ru/">
-              <img class="footer-contacts-html-logo" src="" alt="Логотип разработчика .html academy">
-          </a>
-      </p>
+      <a class="footer-contacts-link" href="index.html">
+        <img class="logo footer-logo" src="" alt="Логотип Интернет-магазина «Девайс».">
+      </a>
 
-      </section>
+      <h2 class="visually-hidden">Контакты</h2>
+      <address class="footer-contacts-addres">
+        <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </address>
+
       <section class="footer-navigation">
         <h2 class="visually-hidden">Навигация</h2>
         <ul class="footer-navigation-list">
@@ -290,6 +277,9 @@
           </li>
         </ul>
       </section>
+
+      <a class="footer-contacts-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="footer-soctial-list">
@@ -304,6 +294,12 @@
           </li>
         </ul>
       </section>
+
+      <p class="copyright">
+        <a class="footer-contacts-link" href="https://htmlacademy.ru/">
+          <img class="footer-contacts-html-logo" src="" alt="Логотип разработчика .html academy.">
+        </a>
+      </p>
 
     </footer>
 
