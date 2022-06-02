@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 
 
@@ -27,13 +27,14 @@ body {
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
 
 }
 
 .button,
 .services-button {
   font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
@@ -102,17 +103,14 @@ body {
   line-height: 30px;
 }
 
-.slider-item-description {
-  color: #444444;
-}
-
 .slider-item-feature-name {
   font-size: 16px;
-  color: #444444;
 }
 
 .slider-item-feature-value {
   font-size: 36px;
+  line-height: 30px;
+  color: #000000;
 }
 
 /* categories */
@@ -165,8 +163,9 @@ body {
   background-color: #f0f0f0;
 }
 
-.service-description {
-  color: #444444;
+.services-button-chosen {
+  color: #ffe17f;
+  background-color: #000000;
 }
 
 .services-item::after {
@@ -207,11 +206,6 @@ body {
 
 /* about and contacts */
 
-.about,
-.contacts {
-  color: #444444;
-}
-
 .delivery-company-list {
   font-weight: 700;
   color: #000000;
@@ -229,7 +223,6 @@ body {
 
 .subscription {
   background-color: #f0f0f0;
-  color: #444444;
 }
 
 .subscription-button {
@@ -281,6 +274,12 @@ body {
 
 /* catalog page */
 
+.breadcrumbs {
+  color:#000000;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .breadcrubms-item:not(:last-child)::after {
   content: " ";
   display: inline-block;
@@ -297,6 +296,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .catalog-subsection-title {
@@ -305,6 +305,7 @@ body {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .products-card-link {
@@ -312,6 +313,7 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   text-decoration: none;
+  color: #000000;
 }
 
 .products-card-price {
