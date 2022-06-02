@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Интернет-магазин «Девайс»</title>
   </head>
   <body>
@@ -32,7 +33,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link navigation-catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -133,72 +134,78 @@
       <section class="catalog-categories">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="catalog-categories-list">
-          <li class="catalog-category-item">
+          <li class="catalog-category-item category-vr">
             <a class="catalog-category-link" href="#">Виртуальная реальность</a>
           </li>
-          <li class="catalog-category-item">
+          <li class="catalog-category-item category-monopode">
             <a class="catalog-category-link" href="#">Моноподы для селфи</a>
           </li>
-          <li class="catalog-category-item">
+          <li class="catalog-category-item category-cameras">
             <a class="catalog-category-link" href="#">Экшн-камеры</a>
           </li>
-          <li class="catalog-category-item">
+          <li class="catalog-category-item category-fitness">
             <a class="catalog-category-link" href="#">Фитнес-браслеты</a>
           </li>
-          <li class="catalog-category-item">
+          <li class="catalog-category-item category-watches">
             <a class="catalog-category-link" href="#">Умные часы</a>
           </li>
-          <li class="catalog-category-item">
+          <li class="catalog-category-item category-copters">
             <a class="catalog-category-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
       <section class="services">
         <h2 class="visually-hidden">Сервисы</h2>
-        <ul class="services-list">
-          <li class="services-item">
-            <h3 class="service-title">Доставка</h3>
-            <p class="service-description">
-              Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
-          </li>
-          <li class="services-item">
-            <h3 class="service-title">Гарантия</h3>
-            <p class="service-description">
-              Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
-          </li>
-          <li class="services-item">
-            <h3 class="service-title">Кредит</h3>
-            <p class="service-description">
-              Залезть в долговую яму стало проще! Кредитные
-              консультанты подберут для вас наиболее выгодные
-              условия кредита. Выгодные для банка, разумеется.
-            </p>
-          </li>
-        </ul>
-        <ul class="services-buttons-list">
-          <li class="services-buttons-item">
-            <button class="services-button services-button-chosen" type="button">Доставка</button>
-          </li>
-          <li class="services-buttons-item">
-            <button class="services-button" type="button">Гарантия</button>
-          </li>
-          <li class="services-buttons-item">
-            <button class="services-button" type="button">Кредит</button>
-          </li>
-        </ul>
-        <a class="rare-items-link" href="#">
-          <p class="rare-items-text">Доставим редкий товар под заказ</p>
+        <div class="services-wrapper">
+          <ul class="services-buttons-list">
+            <li class="services-buttons-item">
+              <button class="services-button services-button-chosen" type="button">Доставка</button>
+            </li>
+            <li class="services-buttons-item">
+              <button class="services-button" type="button">Гарантия</button>
+            </li>
+            <li class="services-buttons-item">
+              <button class="services-button" type="button">Кредит</button>
+            </li>
+          </ul>
+
+          <div class="services-list">
+            <div class="services-item service-delivery">
+              <h3 class="service-title">Доставка</h3>
+              <p class="service-description">
+                Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно! Ведь
+                мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+            </div>
+            <div class="services-item service-warranty">
+              <h3 class="service-title">Гарантия</h3>
+              <p class="service-description">
+                Если из-за возгорания купленного у нас товара у вас
+                сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.
+              </p>
+            </div>
+            <div class="services-item service-credit">
+              <h3 class="service-title">Кредит</h3>
+              <p class="service-description">
+                Залезть в долговую яму стало проще! Кредитные
+                консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для банка, разумеется.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="rare-items">
+          <a class="rare-items-link" href="#">
+            <p class="rare-items-text">Доставим редкий товар под заказ</p>
+          </a>
           <span class="visually-hidden">Больше информации</span>
-        </a>
+        </div>
       </section>
 
       <section class="about">
+        <div class="divider"></div>
         <h2 class="about-title">О нас</h2>
         <p class="about-descriotion">
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -214,6 +221,7 @@
         <a class="button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
+        <div class="divider"></div>
         <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-text">
           Вы можете забрать товар сами, заехав в наш офис.
@@ -249,7 +257,7 @@
             Подписаться
           </button>
          </form>
-         <p class="subscription-text">Это бесплатно</p>
+         <p class="subscription-text subcription-free">Это бесплатно</p>
       </section>
     </main>
 
@@ -260,7 +268,7 @@
 
       <div class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <address class="footer-contacts-address">
+        <address class="contacts-address">
          <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </div>
@@ -282,6 +290,7 @@
 
       <a class="footer-contacts-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
 
+      <div class="divider"></div>
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="footer-soctial-list">
