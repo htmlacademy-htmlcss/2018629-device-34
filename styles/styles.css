@@ -70,6 +70,7 @@ body {
 .navigation-user-link {
   color: #000000;
   text-decoration: none;
+  text-align: center;
 }
 
 .navigation-link {
@@ -80,6 +81,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 
 .navigation-catalog::after {
@@ -135,26 +137,32 @@ body {
 
 .category-vr::before {
   background-image: url(../images/categories/catalog-category-vr.svg);
+  background-size: 100% auto;
 }
 
 .category-monopode::before {
   background-image: url(../images/categories/catalog-category-monopodes.svg);
+  background-size: 100% auto;
 }
 
 .category-cameras::before {
   background-image: url(../images/categories/catalog-category-cameras.svg);
+  background-size: 100% auto;
 }
 
 .category-fitness::before {
   background-image: url(../images/categories/catalog-category-fitness.svg);
+  background-size: 100% auto;
 }
 
 .category-watches::before {
   background-image: url(../images/categories/catalog-category-watch.svg);
+  background-size: 100% auto;
 }
 
 .category-copters::before {
   background-image: url(../images/categories/catalog-category-copters.svg);
+  background-size: 100% auto;
 }
 
 /* services */
@@ -169,7 +177,7 @@ body {
 }
 
 .services-item::after {
-  content: " ";
+  content: "";
   display: block;
   width: 200px;
   height: 200px;
@@ -179,14 +187,17 @@ body {
 
 .service-delivery::after {
   background-image: url(../images/services/delivery.svg);
+  background-size: auto 100%;
 }
 
 .service-warranty::after {
   background-image: url(../images/services/warranty.svg);
+  background-size: auto 100%;
 }
 
 .service-credit::after {
   background-image: url(../images/services/credit.svg);
+  background-size: auto 100%;
 }
 
 .rare-items {
@@ -239,6 +250,7 @@ body {
   width: 16px;
   height: 16px;
   background-image: url(../images/tick-big.svg);
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -252,7 +264,7 @@ body {
   color: #ffffff;
 }
 
-.footer-contacts-link {
+.page-footer a {
   color: #ffffff;
 }
 
@@ -263,8 +275,6 @@ body {
   letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
-
-  color: #ffffff;
 }
 
 .page-footer .divider {
@@ -286,9 +296,14 @@ body {
   width: 4px;
   height: 7px;
   background-image: url(../images/arrows/nav-arrow.svg);
+  background-size: 100% auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   opacity: 0.2;
+}
+
+.catalog-products {
+  background-color: #f0f0f0;
 }
 
 .catalog-filter-title {
@@ -308,6 +323,10 @@ body {
   color: #000000;
 }
 
+.products {
+  background-color: #ffffff;
+}
+
 .products-card-link {
   font-weight: 700;
   line-height: 20px;
@@ -320,6 +339,12 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #444444;
+}
+
+.pagination-show-more {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
 }
 
 .pagination-list {
