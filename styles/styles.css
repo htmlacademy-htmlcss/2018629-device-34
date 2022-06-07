@@ -73,18 +73,34 @@ body {
   margin-bottom: 70px;
 }
 
+.subscription .container {
+  margin-bottom: 0;
+}
+
 /* header */
 
 .page-header {
   margin-top: 40px;
   height: 300px;
   background-color: #ffe17f;
+  padding: 0 60px;
 }
+
+.header-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
 
 .navigation-user-link {
   color: #000000;
   text-decoration: none;
   text-align: center;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;;
 }
 
 .navigation-link {
@@ -96,7 +112,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-}
+ }
 
 .navigation-catalog::after {
   content: "";
@@ -124,17 +140,59 @@ body {
   line-height: 30px;
 }
 
+.slider-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-item-wrapper {
+  width: 560px;
+}
+
+.slider-item-image {
+  width: 560px;
+  height: auto;
+}
+
+.slider-item-features {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.slider-feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
 .slider-item-feature-name {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
+  order: 2;
+
 }
 
 .slider-item-feature-value {
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   line-height: 30px;
   color: #000000;
 }
 
 /* categories */
+
+.catalog-categories-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-category-item {
+  width: 160px;
+}
 
 .catalog-category-link {
   font-family: "Raleway", "Arial", sans-serif;
@@ -190,6 +248,20 @@ body {
   background-color: #f0f0f0;
 }
 
+.services-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-buttons-list {
+  width: 280px;
+  border-right: 7px solid #000000;
+}
+
+.services-list {
+  width: 750px;
+}
+
 .services-button-chosen {
   color: #ffe17f;
   background-color: #000000;
@@ -236,6 +308,16 @@ body {
 
 /* about and contacts */
 
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about,
+.contacts {
+  width: 520px;
+}
+
 .delivery-company-list {
   font-weight: 700;
   color: #000000;
@@ -253,6 +335,22 @@ body {
 
 .subscription {
   background-color: #f0f0f0;
+}
+
+
+.subscription-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-title {
+  width: 560px;
+  align-self: center;
+}
+
+.subscription-text {
+  width: 560px;
+  align-self: center;
 }
 
 .subscription-button {
@@ -277,6 +375,7 @@ body {
 /* footer */
 
 .page-footer {
+  margin-top: 0;
   background-color: #444444;
   font-size: 16px;
   line-height: 20px;
@@ -296,9 +395,12 @@ body {
   text-transform: uppercase;
 }
 
-.page-footer .divider {
-  background-color: #ffc700;
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 
 /* catalog page */
