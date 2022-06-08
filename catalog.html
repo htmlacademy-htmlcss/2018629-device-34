@@ -6,42 +6,41 @@
     <title>Каталог магазина «Девайс»</title>
   </head>
   <body>
-    <div class="container header-container">
+    <div class="container header-container header-catalog-container">
       <header class="page-header">
-        <div class="header-wrapper">
-          <a class="link navigation-logo" href="index.html">
-            <img class="logo" src="images/logo.svg" alt="Логотип Интернет-магазина «Девайс»." width="145" height="36">
-          </a>
-          <div class="navigation-user-wrapper">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="search">
-              <span class="visually-hidden">Поиск</span>
-              </label>
-              <input type="text" name="search" id="search" placeholder="Текст поиска">
-              <button class="submit-button" type="submit">Найти</button>
-            </form>
-            <ul class="navigation-list navigation-user">
-              <li class="navigation-user-item">
-                <a class="link navigation-user-link" href="#">Коля Петухов</a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="link navigation-user-link" href="#">Выйти</a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="link navigation-user-link" href="#">Сравнить</a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="link navigation-user-link" href="#">Корзина</a>
-                <span class="basket-items-number">2</span>
-              </li>
-            </ul>
+        <a class="link navigation-logo" href="index.html">
+          <img class="logo" src="images/logo.svg" alt="Логотип Интернет-магазина «Девайс»." width="145" height="36">
+        </a>
+        <div class="user-wrapper">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="search">
+            <span class="visually-hidden">Поиск</span>
+            </label>
+            <input class="search-input" type="text" name="search" id="search" placeholder="Текст поиска">
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+          <ul class="user-list">
+            <li class="user-item">
+              <a class="link user-link" href="#">Коля Петухов</a>
+            </li>
+            <li class="user-item">
+              <a class="link user-link" href="#">Выйти</a>
+            </li>
+            <li class="user-item">
+              <a class="link user-link" href="#">Сравнить</a>
+            </li>
+            <li class="user-item">
+              <a class="link user-link" href="#">Корзина</a>
+              <span class="basket-items-number">2</span>
+            </li>
+          </ul>
         </div>
 
           <nav class="navigation">
+            <div class="navigation-catalog">
+            <a class="link navigation-link" href="catalog.html">Каталог товаров</a>
+            </div>
             <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="link navigation-link navigation-catalog" href="catalog.html">Каталог товаров</a>
-              </li>
               <li class="navigation-item">
                 <a class="link navigation-link" href="#">Доставка</a>
               </li>
@@ -53,11 +52,11 @@
               </li>
             </ul>
           </nav>
-        </div>
+
       </header>
     </div>
 
-    <main class="main-container main-inner">
+     <main class="main-container main-inner">
       <div class="container inner-header-container">
         <header class="inner-header">
           <h1 class="title inner-header-title">Моноподы для селфи</h1>
@@ -220,8 +219,8 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
-        <a class="link footer-contacts-link" href="index.html">
+      <div class="container footer-container">
+        <a class="link footer-logo-link" href="index.html">
           <img class="logo footer-logo" src="images/logo-footer.svg" alt="Логотип Интернет-магазина «Девайс»." width="145" height="36">
         </a>
 
@@ -251,18 +250,24 @@
           <a class="link footer-contacts-tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
 
-        <div class="footer-wrapper">
+        <div class="footer-wrapper footer-social-wrapper">
           <section class="footer-social">
             <h2 class="visually-hidden">Мы в соцсетях</h2>
             <ul class="footer-soctial-list">
               <li class="footer-social-item">
-                <a class="link footer-social-link visually-hidden" href="https://t.me/htmlacademy">Telegram</a>
+                <a class="link footer-social-link link-telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
               </li>
               <li class="footer-social-item">
-                <a class="link footer-social-link visually-hidden" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
+                <a class="link footer-social-link link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">YouTube</span>
+                </a>
               </li>
               <li class="footer-social-item">
-                <a class="link footer-social-link visually-hidden" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+                <a class="link footer-social-link link-twitter" href="https://twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
               </li>
             </ul>
           </section>

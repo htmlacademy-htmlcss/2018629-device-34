@@ -87,7 +87,7 @@ body {
 /* header */
 
 .header-container {
-  margin-top: 60px;
+  margin-top: 40px;
   background-color: #ffe17f;
 }
 
@@ -104,6 +104,11 @@ body {
   display: block;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
 }
 
 .user-wrapper {
@@ -818,17 +823,47 @@ body {
 
 /* catalog page */
 
+.header-catalog-container {
+  margin-bottom: 35px;
+}
+
+.inner-header-container {
+  padding-left: 60px;
+  margin-bottom: 35px;
+}
+
+.inner-header-title {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
   color:#000000;
   font-size: 16px;
   line-height: 19px;
+  list-style-type: none;
+}
+
+.breadcrubms-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 16px;
+}
+
+.breadcrumbs-link {
+  margin-right: 16px;
 }
 
 .breadcrubms-item:not(:last-child)::after {
-  content: " ";
-  display: inline-block;
+  content: "";
+  display: block;
   width: 4px;
   height: 7px;
+  margin-right: 16px;
   background-image: url(../images/arrows/nav-arrow.svg);
   background-size: 100% auto;
   background-position: 50% 50%;
