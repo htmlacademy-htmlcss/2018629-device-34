@@ -8,37 +8,34 @@
   <body>
     <div class="container header-container">
       <header class="page-header">
-        <div class="header-wrapper">
-          <a class="link navigation-logo" href="index.html">
-            <img class="logo" src="images/logo.svg" alt="Логотип Интернет-магазина «Девайс»." width="145" height="36">
-          </a>
-          <div class="navigation-user-wrapper">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="search">
-              <span class="visually-hidden">Поиск</span>
-              </label>
-              <input type="text" name="search" id="search" placeholder="Текст поиска">
-              <button class="submit-button" type="submit">Найти</button>
-            </form>
-            <ul class="navigation-list navigation-user">
-              <li class="navigation-user-item">
-                <a class="link navigation-user-link" href="#">Войти</a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="link navigation-user-link" href="#">Сравнить</a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="link navigation-user-link" href="#">Корзина</a>
-                <span class="basket-items-number">2</span>
-              </li>
-            </ul>
+        <a class="link navigation-logo" href="index.html">
+          <img class="logo" src="images/logo.svg" alt="Логотип Интернет-магазина «Девайс»." width="145" height="36">
+        </a>
+        <div class="user-wrapper">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="search">
+            <span class="visually-hidden">Поиск</span>
+            </label>
+            <input class="search-input" type="text" name="search" id="search" placeholder="Текст поиска">
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+          <ul class="user-list">
+            <li class="user-item">
+              <a class="link user-link" href="#">Войти</a>
+            </li>
+            <li class="user-item">
+              <a class="link user-link" href="#">Сравнить</a>
+            </li>
+            <li class="user-item">
+              <a class="link user-link" href="#">Корзина</a>
+              <span class="basket-items-number">2</span>
+            </li>
+          </ul>
         </div>
 
           <nav class="navigation">
+            <a class="link navigation-link navigation-catalog" href="catalog.html">Каталог товаров</a>
             <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="link navigation-link navigation-catalog" href="catalog.html">Каталог товаров</a>
-              </li>
               <li class="navigation-item">
                 <a class="link navigation-link" href="#">Доставка</a>
               </li>
@@ -50,7 +47,7 @@
               </li>
             </ul>
           </nav>
-        </div>
+
       </header>
     </div>
 
@@ -63,8 +60,8 @@
 
             <div class="slider-item">
               <img class="slider-item-image" src="images/slider/slider-1.png" alt="Квадрокоптер с мощным лазером." width="560" height="560">
+              <h3 class="visually-hidden">Квадрокоптер</h3>
               <div class="slider-item-wrapper">
-                <h3 class="visually-hidden">Квадрокоптер</h3>
                 <span class="slider-number">01</span>
                 <p class="title slider-item-slogan">Порхает как бабочка, жалит как пчела!</p>
                 <p class="slider-item-description">
@@ -82,7 +79,7 @@
                     <dd class="slider-item-feature-value">50 м</dd>
                   </div>
                 </dl>
-             </div>
+              </div>
             </div>
 
             <div class="slider-item">
@@ -208,42 +205,51 @@
             </ul>
 
             <div class="services-list">
+
               <div class="services-item service-delivery">
-                <h3 class="title service-title">Доставка</h3>
-                <p class="service-description">
-                  Мы с удовольствием доставим ваш товар прямо
-                  к вашему подъезду совершенно бесплатно! Ведь
-                  мы неплохо заработаем, поднимая его на ваш этаж.
-                </p>
+                <div class="services-item-wrapper">
+                  <h3 class="title service-title">Доставка</h3>
+                  <p class="service-description">
+                    Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно! Ведь
+                    мы неплохо заработаем, поднимая его на ваш этаж.
+                  </p>
+                </div>
               </div>
+
               <div class="services-item service-warranty">
-                <h3 class="title service-title">Гарантия</h3>
-                <p class="service-description">
-                  Если из-за возгорания купленного у нас товара у вас
-                  сгорит дом — не переживайте, мы выдадим вам новый.
-                  Товар, не дом, конечно же.
-                </p>
+                <div class="services-item-wrapper">
+                  <h3 class="title service-title">Гарантия</h3>
+                  <p class="service-description">
+                    Если из-за возгорания купленного у нас товара у вас
+                    сгорит дом — не переживайте, мы выдадим вам новый.
+                    Товар, не дом, конечно же.
+                  </p>
+                </div>
               </div>
+
               <div class="services-item service-credit">
-                <h3 class="title service-title">Кредит</h3>
-                <p class="service-description">
-                  Залезть в долговую яму стало проще! Кредитные
-                  консультанты подберут для вас наиболее выгодные
-                  условия кредита. Выгодные для банка, разумеется.
-                </p>
+                <div class="services-item-wrapper">
+                  <h3 class="title service-title">Кредит</h3>
+                  <p class="service-description">
+                    Залезть в долговую яму стало проще! Кредитные
+                    консультанты подберут для вас наиболее выгодные
+                    условия кредита. Выгодные для банка, разумеется.
+                  </p>
+                </div>
               </div>
+
             </div>
 
           </div>
         </div>
 
-        <div class="container">
-          <div class="rare-items">
-            <a class="link rare-items-link" href="#">
+        <div class="container rare-container">
+          <a class="link rare-items-link" href="#">
+            <div class="rare-items">
               <p class="rare-items-text">Доставим редкий товар под заказ</p>
-            </a>
-            <span class="visually-hidden">Больше информации</span>
-          </div>
+            </div>
+          </a>
         </div>
       </section>
 

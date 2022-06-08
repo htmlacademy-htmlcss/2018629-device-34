@@ -40,6 +40,17 @@ body {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -68,39 +79,118 @@ body {
 .container {
   margin: 0 auto;
   width: 1160px;
-  margin-bottom: 70px;
 }
 
-.subscription .container {
-  margin-bottom: 0;
-}
 
 /* header */
 
-.page-header {
-  margin-top: 40px;
-  height: 300px;
+.header-container {
+  margin-top: 60px;
   background-color: #ffe17f;
+}
+
+.page-header {
+  margin-top: -20px;
   padding: 0 60px;
 }
 
-.header-wrapper {
+.navigation-logo {
+  display: block;
   margin: 0;
-  padding: 0;
+  margin-bottom: 30px;
 }
 
+.user-wrapper {
+  margin: 0;
+  display: flex;
+  margin-bottom: 30px;
+}
 
-.navigation-user-link {
-  color: #000000;
-  text-align: center;
+.search-form {
+  display: flex;
+  align-items: center;
+
+  width: 517px;
+  margin-right: 26px;
+}
+
+.search-input {
+  box-sizing: border-box;
+  width: 350px;
+  height: 38px;
+  margin: 0;
+  padding: 0 0 0 16px;
+  border: 2px solid #000000;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.search-button {
+  box-sizing: border-box;
+  margin: 0;
+  width: 160px;
+  height: 38px;
+  border: 2px solid #000000;
+  border-left-width: 0;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.user-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 520px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-item:not(:last-child) {
+  margin-right: 26px;
+}
+
+.user-item:first-child {
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 747px;
   margin: 0;
-  padding: 0;;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-catalog {
+  margin-right: auto;
+  align-self: center;
+}
+
+
+.user-link {
+  color: #000000;
+  text-align: center;
+  display: block;
+}
+
+.basket-items-number {
+  position: absolute;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-link {
+  display: block;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -121,16 +211,22 @@ body {
   border: 2px solid #000000;
   border-radius: 50%;
   opacity: 0.3;
+
 }
 
 /* slider */
 
-.slider {
+.slider-container {
+  margin-bottom: 70px;
+}
+
+.slider-list {
   margin: 0 auto;
   width: 1160px;
 }
 
 .slider-number {
+  color: #ffffff;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
@@ -178,19 +274,29 @@ body {
 }
 
 /* categories */
-
+.catalog-categories-container {
+  margin-bottom: 70px;
+}
 .catalog-categories-list {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .catalog-category-item {
   width: 160px;
+  margin-right: 40px;
+}
+
+.catalog-category-item:nth-child(6) {
+  margin-right: 0;
 }
 
 .catalog-category-link {
+  display: block;
+  height: 60px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -202,10 +308,12 @@ body {
   display: block;
   width: 160px;
   height: 160px;
+  margin-bottom: 33px;
   background-color: #ffe17f;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
+
 }
 
 .category-vr::before {
@@ -234,8 +342,13 @@ body {
 
 /* services */
 
+.services {
+  margin-bottom: 70px;
+}
+
 .services-wrapper {
   background-color: #f0f0f0;
+  margin-bottom: 70px;
 }
 
 .services-container {
@@ -245,48 +358,97 @@ body {
 
 .services-buttons-list {
   width: 280px;
+  list-style-type: none;
+  margin-right: 116px;
+  padding: 64px 0;
   border-right: 7px solid #000000;
+}
+
+
+
+.services-button {
+  width: 160px;
+  height: 40px;
+  border: 0;
+}
+
+.services-buttons-item {
+  margin-bottom: 35px;
+}
+
+.services-buttons-item:last-child {
+  margin-bottom: 0;
+}
+
+.services-button-chosen {
+  width: 280px;
+  text-align: left;
+  padding-left: 18px;
+  color: #ffe17f;
+  background-color: #000000;
 }
 
 .services-list {
   width: 750px;
+  align-self: center;
 }
 
-.services-button-chosen {
-  color: #ffe17f;
-  background-color: #000000;
+.services-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .services-item::after {
   content: "";
   display: block;
-  width: 200px;
-  height: 200px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
 }
 
+.services-item-wrapper {
+  margin: 64px 0;
+}
+
+.service-title {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.service-description {
+  display: block;
+  width: 480px;
+}
+
 .service-delivery::after {
   background-image: url(../images/services/delivery.svg);
+  width: 136px;
+  height: 164px;
 
 }
 
 .service-warranty::after {
   background-image: url(../images/services/warranty.svg);
+  width: 171px;
+  height: 195px;
 
 }
 
 .service-credit::after {
   background-image: url(../images/services/credit.svg);
+  width: 156px;
+  height: 188px;
 
 }
 
-.rare-items {
-  background-color: #f0f0f0;
-}
+ /* rare items */
 
 .rare-items-link {
+  display: flex;
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 100px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -296,11 +458,48 @@ body {
   color: #000000;
 }
 
+.rare-items {
+  width: 910px;
+  height: 100px;
+  margin: auto 0;
+}
+
+.rare-items-link::before {
+  content: "";
+  display: block;
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+  background-image: url(../images/delivery-car.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 47px;
+}
+
+.rare-items-link::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background-color: #dcdcdc;
+  background-image: url(../images/info-rare.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.rare-items-text {
+  margin: 40px auto;
+}
+
 /* about and contacts */
 
 .about-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .about,
