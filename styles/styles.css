@@ -736,8 +736,7 @@ body {
 }
 
 .footer-container {
-  margin-top: 62px;
-  margin-bottom: 62px;
+  padding: 62px 0;
 }
 
 .page-footer a {
@@ -746,6 +745,8 @@ body {
 
 .footer-logo-link {
   display: block;
+  margin: 0;
+  padding: o;
   margin-bottom: 35px;
 }
 
@@ -753,7 +754,10 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 47px;
-  height: 40px;
+}
+
+.footer-wrapper:last-child {
+  margin-bottom: 0;
 }
 
 .footer-contacts {
@@ -761,13 +765,16 @@ body {
   margin-right: auto;
 }
 
-.footer-contacts-text {
+.page-footer .contacts-address {
+  display: block;
   margin: 0;
+  padding: 0;
 }
 
-.footer-navigation {
-  min-width: 444px;
-  margin-right: auto;
+.footer-contacts-text {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contacts-tel {
@@ -776,14 +783,23 @@ body {
   text-align: right;
 }
 
+
+.footer-navigation {
+  min-width: 444px;
+  margin-right: auto;
+}
+
 .footer-navigation-list {
   display: flex;
   margin: 0;
+  padding: 0;
   margin-right: auto;
 }
 
 .footer-navigation-item {
   display: block;
+  margin: 0;
+  padding: 0;
   margin-right: 35px;
 }
 
@@ -792,6 +808,7 @@ body {
 }
 
 .footer-navigation-link {
+  padding: 10px 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -846,7 +863,11 @@ body {
   margin-right: 0;
 }
 
-
+.copyright {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 
 /* catalog page */
 
