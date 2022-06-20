@@ -304,6 +304,8 @@ body {
 }
 
 .slider-item-description {
+  margin: 0;
+  padding: 0;
   margin-bottom: 51px;
 }
 
@@ -315,6 +317,7 @@ body {
 }
 
 .slider-item-features {
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -437,7 +440,6 @@ body {
 .services-buttons-list {
   width: 280px;
   list-style-type: none;
-  margin-right: 116px;
   margin: 0;
   margin-right: 116px;
   padding: 64px 0;
@@ -475,6 +477,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 72px 0;
 }
 
 .services-item::after {
@@ -483,11 +486,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
-  margin: 0 auto;
-}
-
-.services-item-wrapper {
-  margin: 64px 0;
+  margin: 0;
 }
 
 .service-title {
@@ -497,6 +496,7 @@ body {
 
 .service-description {
   display: block;
+  margin: 0;
   width: 480px;
 }
 
@@ -834,13 +834,21 @@ body {
   list-style-type: none;
 }
 
-.footer-social-link::before {
-  content: "";
+.footer-social-item {
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.footer-social-item:last-child {
+  margin: 0;
+}
+
+.footer-social-link {
   display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 15px;
   background-color: #ffffff;
   background-position: 50% 50%;
   background-size: contain;
@@ -848,15 +856,15 @@ body {
   opacity: 0.3;
 }
 
-.link-telegram::before {
+.link-telegram {
   background-image: url(../images/telegram.svg);
 }
 
-.link-youtube::before {
+.link-youtube {
   background-image: url(../images/youtube.svg);
 }
 
-.link-twitter::before {
+.link-twitter {
   background-image: url(../images/twitter.svg);
   margin-right: 0;
 }
@@ -1008,27 +1016,22 @@ body {
 }
 
 .sorting-button {
-  margin: 0;
-  padding: 0;
-}
-
-.sorting-button::before {
-  content: "";
   display: block;
   width: 30px;
   height: 30px;
   margin: 0;
+  padding: 0;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 11px 10px;
   opacity: 0.2;
 }
 
-.sorting-up::before {
+.sorting-up {
   background-image: url(../images/arrows/arrow-up.svg);
 }
 
-.sorting-down::before {
+.sorting-down {
   background-image: url(../images/arrows/arrow-down.svg);
 }
 
@@ -1036,7 +1039,8 @@ body {
 
 .products {
   background-color: #ffffff;
-  height: 100%;
+  padding: 0;
+  padding-bottom: 78px;
 }
 
 .products-list {
@@ -1079,7 +1083,6 @@ body {
   list-style-type: none;
   margin: 0 40px;
   padding: 0;
-  margin-bottom: 78px;
 }
 
 .pagination-item {
