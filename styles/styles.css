@@ -153,6 +153,7 @@ body {
 
 .user-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 520px;
@@ -319,7 +320,6 @@ body {
 .slider-item-features {
   margin: 0;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -789,6 +789,7 @@ body {
 
 .footer-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-right: auto;
@@ -829,6 +830,7 @@ body {
 
 .footer-soctial-list {
   display: flex;
+  flex-wrap: wrap;
   min-width: 150px;
   margin: 0;
   list-style-type: none;
@@ -897,6 +899,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   color: #000000;
