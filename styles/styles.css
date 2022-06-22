@@ -181,10 +181,14 @@ body {
   text-align: center;
 }
 
+.basket-link {
+  padding-left: 40px;
+}
+
 .basket-items-number {
   position: absolute;
   top: 10px;
-  left: -41px;
+  left: 0;
   box-sizing: border-box;
   padding: 2px;
   width: 21px;
