@@ -56,6 +56,7 @@ body {
 
 .button {
   display: block;
+  box-sizing: border-box;
   min-width: 220px;
   width: max-content;
   padding: 10px 22px;
@@ -69,6 +70,23 @@ body {
   color: #000000;
   border: none;
   cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0) 16px, 16px, #ffe17f 24px, 24px, rgba(0, 0, 0, 0));
+}
+
+.button:hover {
+  background: #ffe17f;
+}
+
+.button:active {
+  background: #FFCC33;
+}
+
+.button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.button:disabled {
+  opacity: 0.3;
 }
 
 .link {
@@ -160,15 +178,44 @@ body {
 .search-button {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #ffe17f;
+  cursor: pointer;
+}
+
+.search-button-text{
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 0;
   width: 160px;
   height: 38px;
   border: 2px solid #000000;
   border-left-width: 0;
   border-radius: 0 50px 50px 0;
-  background-color: #ffe17f;
   font-size: 16px;
-  line-height: 20px;
-  cursor: pointer;
+  line-height: 16px;
+}
+
+
+.search-button:hover .search-button-text {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-button:active  .search-button-text{
+  background-color: #000000;
+  color: #4d4d4d;
+}
+
+.search-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.search-button:disabled {
+  opacity: 0.3;
 }
 
 .user-list {
@@ -226,6 +273,8 @@ body {
 
 .navigation {
   display: flex;
+  position: relative;
+  z-index: 10;
   margin: 0;
   padding: 0;
 }
@@ -244,10 +293,11 @@ body {
   margin-right: 45px;
 }
 
+
 .navigation-link {
   display: block;
   box-sizing: border-box;
-  padding: 14px 0;
+  padding: 4px 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -257,11 +307,20 @@ body {
   text-align: center;
 }
 
+.navigation-link-current {
+  border-bottom: 2px solid #000000;
+}
+
 .navigation-catalog {
   display: flex;
   margin-right: auto;
   align-items: center;
   padding: 0;
+}
+
+.navigation-catalog:hover,
+.navigation-catalog:active {
+  opacity: 1;
 }
 
 .navigation-catalog-text {
@@ -272,6 +331,7 @@ body {
 .navigation-catalog::after {
   content: "";
   display: block;
+  box-sizing: border-box;
   width: 50px;
   height: 50px;
   margin-left: 20px;
@@ -282,6 +342,12 @@ body {
   border-radius: 50%;
   opacity: 0.3;
 }
+
+.navigation-catalog:hover::after,
+.navigation-catalog:active::after {
+  opacity: 1;
+}
+
 
 /* slider */
 
@@ -406,14 +472,22 @@ body {
 
 .catalog-category-link {
   display: block;
-  height: 60px;
+  margin: 0;
+  padding: 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
   color: #000000;
 }
 
-.catalog-category-item::before {
+.catalog-category-text {
+  display: block;
+  height: 60px;
+}
+
+.catalog-category-link::before {
   content: " ";
   display: block;
   width: 160px;
@@ -447,6 +521,19 @@ body {
 
 .category-copters::before {
   background-image: url(../images/categories/catalog-category-copters.svg);
+}
+
+.catalog-category-link:hover::before{
+  background-color: #ffc700;
+}
+
+.catalog-category-link:active {
+  opacity: 0.3;
+}
+
+.catalog-category-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 /* services */
