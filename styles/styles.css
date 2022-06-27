@@ -586,6 +586,22 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0) 16px, 16px, #ffe17f 24px, 24px, rgba(0, 0, 0, 0));
 }
 
+.services-button:hover:not(.services-button-chosen){
+  background: #ffe17f;
+}
+
+.services-button:active:not(.services-button-chosen) {
+  background: #FFCC33;
+}
+
+.services-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.services-button:disabled {
+  opacity: 0.3;
+}
+
 .services-button-chosen {
   position: relative;
   width: 280px;
@@ -674,9 +690,27 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
   color: #000000;
 }
 
+.rare-items-link:hover::before {
+  background-color: #ffc700;
+}
+
+.rare-items-link:hover::after {
+  opacity: 1;
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+.rare-items-link:active {
+  opacity: 0.3;
+}
+
+.rare-items-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
 .rare-items {
   width: 910px;
   height: 100px;
@@ -753,10 +787,40 @@ body {
 .delivery-company-list {
   font-weight: 700;
   color: #000000;
-  list-style-position: inside;
-  padding: 0;
+  list-style: none;
   margin: 0;
   margin-bottom: 30px;
+  padding: 0;
+}
+
+.delivery-company-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 3px;
+  margin-bottom: 19px;
+}
+
+.delivery-company-item:last-child {
+  margin-bottom: 0;
+}
+
+.delivery-company-item::before {
+  content: "";
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  margin-right: 26px;
+  border-radius: 50%;
+  background-color: #ffc700;
+}
+
+.about-button {
+  width: 270px;
+  padding: 10px 0;
 }
 
 .about-text,
@@ -783,11 +847,20 @@ body {
   color: #444444;
 }
 
+.context-address-tel:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .contacts-schedule {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.contacts-button {
+  width: 260px;
 }
 
 /* subscription */
@@ -830,26 +903,56 @@ body {
 }
 
 .subscription-input {
+  box-sizing: border-box;
   width: 557px;
-  height: 52px;
+  height: 60px;
   border: 0;
   border-bottom: 3px solid #c4c4c4;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0);
   padding-left: 15px;
+}
+
+.subscription-input:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .subscription-button {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: 3px solid #c4c4c4;
-  background-color: #f0f0f0;
-  height: 57px;
+  background-color: rgba(255, 255, 255, 0);
+
+  box-sizing: border-box;
   width: 253px;
   padding: 18px 39px;
+  border: 3px solid #c4c4c4;
   cursor: pointer;
+}
+
+.subscription-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.subscription-button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #000000;
+
+}
+
+.subscription-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.subscription-button:disabled {
+  opacity: 0.3;
+
 }
 
 .subcription-free {
@@ -896,7 +999,6 @@ body {
 
 .footer-wrapper {
   display: flex;
-  /* align-items: center; */
   margin-bottom: 47px;
 }
 
@@ -906,7 +1008,7 @@ body {
 
 .footer-contacts {
   width: 240px;
-  margin-right: auto;
+  margin-right: 124px;
 }
 
 .page-footer .contacts-address {
@@ -922,10 +1024,26 @@ body {
 }
 
 .footer-contacts-tel {
-  padding: 10px 0;
+  padding: 0;
   text-decoration: underline;
-  width: 200px;
   text-align: right;
+  align-self: flex-start;
+}
+
+.footer-contacts-tel:hover {
+  color: #ffc700;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.footer-contacts-tel:active {
+  color: #ffc700;
+  text-decoration: underline;
+}
+
+.footer-contacts-tel:focus {
+  color: #ffffff;
+  outline: 2px solid #AF4FFF;
 }
 
 .footer-navigation {
@@ -944,7 +1062,7 @@ body {
 .footer-navigation-item {
   display: block;
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   margin-right: 35px;
 }
 
@@ -953,12 +1071,30 @@ body {
 }
 
 .footer-navigation-link {
-  padding: 10px 0;
+  padding: 4px 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.footer-navigation-link:hover {
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
+  opacity: 1;
+}
+
+.footer-navigation-link:active {
+  color: #ffc700;
+  border-bottom: 2px solid #ffc700;
+  opacity: 0.3;
+}
+
+.footer-navigation-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  color: #ffffff;
 }
 
 .footer-social-wrapper::before {
@@ -994,27 +1130,63 @@ body {
 
 .footer-social-link {
   display: block;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.link-telegram {
+  padding: 14px 13px;
+}
+
+.link-youtube {
+  padding: 15px 12px;
+}
+
+.link-twitter {
+  padding: 13px 13px;
+  margin-right: 0;
+}
+
+.footer-social-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #ffffff;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
   opacity: 0.3;
+  z-index: -5;
 }
 
-.link-telegram {
-  background-image: url(../images/telegram.svg);
+.footer-social-link:hover::before {
+  background-color: #ffc700;
+  opacity: 1;
 }
 
-.link-youtube {
-  background-image: url(../images/youtube.svg);
+.footer-social-link:active .social-icon{
+  fill-opacity: 0.3;
 }
 
-.link-twitter {
-  background-image: url(../images/twitter.svg);
-  margin-right: 0;
+.footer-social-link:active::before {
+  background-color: #ffc700;
+  opacity: 1;
+}
+
+.footer-social-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .copyright {
@@ -1027,9 +1199,24 @@ body {
   display: block;
 }
 
-.copyright-html-logo {
-  display: block;
+.copyright-logo{
+  fill: #FFC700;
 }
+
+.copyright-logo:hover {
+  fill: #ffffff;
+}
+
+.copyright-link:active .copyright-logo{
+  fill: #ffffff;
+  fill-opacity: 0.3;
+
+}
+
+.copyright-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 
 /* catalog page */
 
