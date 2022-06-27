@@ -694,7 +694,8 @@ body {
 
 .rare-items-link {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
   background-color: #f0f0f0;
   height: 100px;
   font-family: "Raleway", "Arial", sans-serif;
@@ -705,6 +706,37 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.rare-items-link::before {
+  content: "";
+  display: block;
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+  background-image: url(../images/delivery-car.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 47px;
+}
+
+.rare-items-link::after {
+  content: "";
+  display: block;
+  margin: auto 0;
+  margin-right: 42px;
+  width: 40px;
+  height: 40px;
+  background-color: #dcdcdc;
+  background-image: url(../images/info-rare.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.rare-items-text {
+  margin: 40px auto;
 }
 
 .rare-items-link:hover::before {
@@ -724,41 +756,7 @@ body {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
-.rare-items {
-  width: 910px;
-  height: 100px;
-  margin: auto 0;
-}
 
-.rare-items-link::before {
-  content: "";
-  display: block;
-  width: 125px;
-  height: 100px;
-  background-color: #ffe17f;
-  background-image: url(../images/delivery-car.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 47px;
-}
-
-.rare-items-link::after {
-  content: "";
-  display: block;
-  margin: auto;
-  width: 40px;
-  height: 40px;
-  background-color: #dcdcdc;
-  background-image: url(../images/info-rare.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-
-.rare-items-text {
-  margin: 40px auto;
-}
 
 /* about and contacts */
 
