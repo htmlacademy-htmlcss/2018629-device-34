@@ -56,19 +56,35 @@ body {
 
 .button {
   display: block;
-  height: 40px;
+  min-width: 220px;
+  width: max-content;
+  padding: 10px 22px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
   color: #000000;
   border: none;
+  cursor: pointer;
 }
 
 .link {
   text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
+
+.link:active {
+  opacity: 0.3;
+}
+
+.link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .title {
@@ -104,6 +120,10 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+}
+
+.navigation-logo:hover {
+  opacity: 0.6;
 }
 
 .logo {
@@ -148,6 +168,7 @@ body {
   background-color: #ffe17f;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .user-list {
@@ -161,12 +182,8 @@ body {
   list-style-type: none;
 }
 
-.user-item {
-  position: relative;
-}
-
 .user-item:not(:last-child) {
-  margin-right: 60px;
+  margin-right: 36px;
 }
 
 .user-item:first-child {
@@ -174,21 +191,28 @@ body {
 }
 
 .user-link {
-  display: block;
+  display: flex;
+  align-items: baseline;
   box-sizing: border-box;
   padding: 5px 0;
   color: #000000;
   text-align: center;
 }
 
-.basket-link {
-  padding-left: 40px;
+.user-icon {
+  margin: 0;
+  margin-right: 12px;
+}
+
+.user-basket {
+  position: relative;
+
 }
 
 .basket-items-number {
   position: absolute;
   top: 10px;
-  left: 0;
+  left: -15px;
   box-sizing: border-box;
   padding: 2px;
   width: 21px;
@@ -709,6 +733,7 @@ body {
   height: 57px;
   width: 253px;
   padding: 18px 39px;
+  cursor: pointer;
 }
 
 .subcription-free {
