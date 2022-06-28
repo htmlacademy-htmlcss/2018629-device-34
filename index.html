@@ -16,25 +16,24 @@
             src="images/logo.svg"
             alt="Логотип Интернет-магазина «Девайс»."
             width="145"
-            height="36"
-          >
+            height="36">
         </a>
         <div class="user-wrapper">
           <form
             class="search-form"
             action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
+            method="post">
             <label for="search">
               <span class="visually-hidden">Поиск</span>
             </label>
-            <input
-              class="search-input"
-              type="text"
-              name="search"
-              id="search"
-              placeholder="Текст поиска"
-            />
+            <div class="search-input-wrapper">
+              <input
+                class="search-input"
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Текст поиска">
+            </div>
             <button
               class="search-button"
               type="submit">
@@ -143,7 +142,7 @@
         <div class="container slider-container">
           <h2 class="visually-hidden">Примеры товаров</h2>
           <div class="slider-list">
-            <div class="slider-item">
+            <div class="slider-item slider-item-current">
               <img
                 class="slider-item-image"
                 src="images/slider/slider-1.png"
@@ -250,16 +249,18 @@
             </div>
           </div>
 
-          <button
-            class="slider-button slider-prev"
-            type="button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-          <button
-            class="slider-button slider-next"
-            type="button">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
+          <div class="slider-controls">
+            <button
+              class="slider-button slider-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button
+              class="slider-button slider-next"
+              type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
 
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -302,7 +303,7 @@
               <a
                 class="catalog-category-link category-monopode"
                 href="#">
-                <span class="catalog-category-text">Моноподы для селфи</span>
+                <span class="catalog-category-text">Моноподы для&nbspселфи</span>
               </a>
             </li>
             <li class="catalog-category-item ">
@@ -344,7 +345,7 @@
             <ul class="services-buttons-list">
               <li class="services-buttons-item">
                 <button
-                  class="services-button services-button-chosen"
+                  class="services-button services-button-current"
                   type="button">
                   Доставка
                 </button>
@@ -366,12 +367,12 @@
             </ul>
 
             <div class="services-list">
-              <div class="services-item service-delivery">
+              <div class="services-item service-delivery service-current">
                 <div class="services-item-wrapper">
                   <h3 class="title service-title">Доставка</h3>
                   <p class="service-description">
-                    Мы с удовольствием доставим ваш товар прямо к вашему
-                    подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+                    Мы с удовольствием доставим ваш товар прямо к&nbspвашему
+                    подъезду совершенно бесплатно! Ведь мы&nbspнеплохо заработаем,
                     поднимая его на ваш этаж.
                   </p>
                 </div>
