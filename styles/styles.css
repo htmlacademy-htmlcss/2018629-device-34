@@ -1824,15 +1824,15 @@ body {
   color: rgba(68, 68, 68, 0.3);
 }
 
-.pagination-link:hover{
+.pagination-link[href]:hover{
   color: rgba(68, 68, 68, 0.5);
 }
 
-.pagination-link:active{
+.pagination-link[href]:active{
   color: rgba(68, 68, 68, 1);
 }
 
-.pagination-link:focus{
+.pagination-link[href]:focus{
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
