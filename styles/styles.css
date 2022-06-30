@@ -2382,6 +2382,10 @@ body {
   cursor: pointer;
 }
 
+.select-control:focus {
+  outline: none;
+}
+
 .select-wrapper:focus-within{
   outline: 2px solid #af4fff;
   outline-offset: -17px;
@@ -2390,33 +2394,36 @@ body {
 .sorting-button {
   position: relative;
 
-  display: block;
+  display: flex;
+  align-items: center;
   width: 30px;
   height: 30px;
   margin: 0;
   padding: 20px 0;
 
-  background-position: 50% 50%;
-  background-size: 11px 10px;
-  background-repeat: no-repeat;
-
-  opacity: 0.2;
+  color: rgba(0, 0, 0, 0.2);
 }
 
-.sorting-up {
-  background-image: url("../images/arrows/arrow-up.svg");
+.sorting-button-icon {
+  position: relative;
+  left: 10px;
+  display: block;
 }
 
 .sorting-down {
-  background-image: url("../images/arrows/arrow-down.svg");
+  transform: rotate(180deg);
 }
 
 .sorting-button:hover{
-  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .sorting-button:active{
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+}
+
+.sorting-button:focus {
+  outline: none;
 }
 
 .sorting-button:focus::after{
