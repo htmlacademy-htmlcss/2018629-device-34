@@ -123,7 +123,7 @@
                     type="button"
                   >
                     <svg
-                      class="popover-icon"
+                      class="popover-remove-icon"
                       aria-hidden="true"
                       focusable="false"
                       width="11"
@@ -155,7 +155,7 @@
                     type="button"
                   >
                     <svg
-                      class="popover-icon"
+                      class="popover-remove-icon"
                       aria-hidden="true"
                       focusable="false"
                       width="11"
@@ -473,13 +473,16 @@
               <h3 class="catalog-subsection-title sorting-subsection-title">
                 сортировка:
               </h3>
-              <select
-                class="select-control"
-                aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="cheap">Новые</option>
-                <option value="expensive">Цена</option>
-              </select>
+              <div class="select-wrapper">
+                <select
+                  class="select-control"
+                  aria-label="Сортировка"
+                >
+                  <option value="popular">Популярные</option>
+                  <option value="cheap">Новые</option>
+                  <option value="expensive">Цена</option>
+                </select>
+              </div>
               <a
                 class="sorting-button sorting-up"
                 href="#">
