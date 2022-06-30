@@ -488,6 +488,10 @@ body {
   opacity: 0.3;
 }
 
+.popover-remove:focus {
+  outline: none;
+}
+
 .popover-remove:focus::after {
   content: "";
   position: absolute;
@@ -2377,7 +2381,7 @@ body {
 
 .select-wrapper:focus-within{
   outline: 2px solid #af4fff;
-  outline-offset: -17px;
+  outline-offset: -15px;
 }
 
 .sorting-button {
