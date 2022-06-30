@@ -1576,7 +1576,7 @@ body {
 .subscription-input {
   box-sizing: border-box;
   width: 558px;
-  height: 60px;
+  height: 57px;
   padding-left: 17px;
 
   font-family: "Rubik", sans-serif;
@@ -1600,6 +1600,7 @@ body {
   pointer-events: none;
 }
 
+.subscription-input:invalid,
 .subscription-field-error {
   border-color: #ff3d3d;
 }
@@ -2794,7 +2795,7 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  display: none;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
@@ -2957,6 +2958,8 @@ body {
   pointer-events: none;
 }
 
+.modal-form-field:invalid,
+.modal-form-field:invalid:focus,
 .field-error {
   outline: 2px solid #ff3d3d;
   outline-offset: -2px;
@@ -2971,7 +2974,7 @@ body {
   line-height: 20px;
   color: #ff3d3d;
 }
-
+.modal-form-field:invalid + .error-message,
 .field-error + .error-message {
   display: block;
 }
