@@ -189,6 +189,7 @@ body {
 
   display: flex;
   align-items: center;
+  min-height: 38px;
   margin: 0;
   margin-right: 25px;
   padding: 0;
@@ -197,7 +198,7 @@ body {
 .search-input {
   box-sizing: border-box;
   width: 360px;
-  height: 38px;
+  min-height: 38px;
   margin: 0;
   padding: 0 16px 0 48px;
 
@@ -231,6 +232,8 @@ body {
 
 .search-button {
   box-sizing: border-box;
+
+  min-height: 38px;
   margin: 0;
   padding: 0;
 
@@ -244,7 +247,7 @@ body {
   display: block;
   box-sizing: border-box;
   width: 160px;
-  height: 38px;
+  min-height: 38px;
   margin: 0;
   padding: 9px 0;
 
@@ -296,6 +299,7 @@ body {
   position: relative;
 
   display: flex;
+  max-width: 300px;
   margin: 0;
   padding: 0;
 }
@@ -312,6 +316,7 @@ body {
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   box-sizing: border-box;
   padding: 6px 0;
@@ -350,6 +355,7 @@ body {
 }
 
 .user-icon {
+
   margin: 0;
   margin-right: 12px;
 }
@@ -365,8 +371,8 @@ body {
   left: 2px;
 
   box-sizing: border-box;
-  width: 21px;
-  height: 21px;
+  min-width: 21px;
+  min-height: 21px;
   padding: 2px;
 
   font-size: 14px;
@@ -649,6 +655,7 @@ body {
   position: relative;
   z-index: 11;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-right: auto;
   padding: 0;
@@ -1693,6 +1700,7 @@ body {
 
 .footer-wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -1702,9 +1710,8 @@ body {
 }
 
 .footer-contacts {
-  width: 240px;
+  max-width: 240px;
   margin: 0;
-  margin-right: 108px;
   padding: 0;
 }
 
@@ -1726,6 +1733,7 @@ body {
   display: block;
   min-width: 180px;
   margin: 0;
+  margin-left: 54px;
   padding: 10px 0;
 
   text-decoration: underline;
@@ -1751,14 +1759,13 @@ body {
 }
 
 .footer-navigation {
-  flex-grow: 1;
   margin: 0;
-  margin-right: auto;
   padding: 0;
 }
 
 .footer-navigation-list {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 0;
@@ -1861,6 +1868,7 @@ body {
 .footer-soctial-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   min-width: 150px;
   margin: 0;
   padding: 0;
@@ -2400,6 +2408,7 @@ body {
 }
 
 .sorting-subsection-title {
+  max-width: 150px;
   margin: 0;
   margin-right: auto;
 }
