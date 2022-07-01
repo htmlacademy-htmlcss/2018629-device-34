@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <title>Интернет-магазин «Девайс»</title>
   </head>
   <body>
@@ -108,6 +108,7 @@
                 <span class="cart-items-number">2</span>
               </a>
               <div class="popover-cart">
+                <h2 class="visually-hidden">Корзина</h2>
 
                 <div class="popover-cart-item">
                   <a
@@ -681,7 +682,7 @@
                 Подписаться
               </button>
             </form>
-            <p class="subcription-free">Это бесплатно</p>
+            <p class="subscription-free">Это бесплатно</p>
           </div>
         </div>
       </section>
@@ -832,6 +833,7 @@
               <svg
                 class="copyright-logo"
                 aria-label="Разработчик - .html academy."
+                role="img"
                 width="115"
                 height="33"
                 xmlns="http://www.w3.org/2000/svg"
@@ -873,6 +875,7 @@
                 id="delivery-name"
                 name="client-name"
                 placeholder="Введите имя"
+                required
               >
               <span class="error-message">Обязательное поле</span>
             </div>
@@ -907,6 +910,7 @@
                 id="delivery-item"
                 name="client-item"
                 placeholder="В свободной форме"
+                required
               >
               <span class="error-message">Обязательное поле</span>
             </div>
