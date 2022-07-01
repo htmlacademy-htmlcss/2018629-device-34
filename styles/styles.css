@@ -729,6 +729,7 @@ img {
 }
 
 .navigation-item-catalog:hover .popover-catalog,
+.navigation-catalog:active + .popover-catalog,
 .navigation-item-catalog:focus-within .popover-catalog {
   display: block;
 }
