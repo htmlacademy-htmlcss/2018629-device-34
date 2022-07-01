@@ -2765,19 +2765,19 @@ img {
   padding-right: 22px;
 }
 
-.pagination-prev:hover,
-.pagination-next:hover {
+.pagination-prev[href]:hover,
+.pagination-next[href]:hover {
   background-color: #dcdcdc;
 }
 
-.pagination-prev:active,
-.pagination-next:active {
+.pagination-prev[href]:active,
+.pagination-next[href]:active {
   background-color: #dcdcdc;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination-prev:focus,
-.pagination-next:focus {
+.pagination-prev[href]:focus,
+.pagination-next[href]:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
