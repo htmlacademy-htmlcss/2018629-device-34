@@ -153,7 +153,7 @@ body {
 }
 
 .header-catalog-container {
-  min-height: 209px;
+  min-height: 208px;
 }
 
 .page-header {
@@ -249,7 +249,7 @@ body {
   width: 160px;
   min-height: 38px;
   margin: 0;
-  padding: 9px 0;
+  padding: 9px 2px;
 
   font-size: 16px;
   line-height: 16px;
@@ -257,6 +257,10 @@ body {
   border: 2px solid #000000;
   border-left-width: 0;
   border-radius: 0 50px 50px 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   transition: background-color 500ms, color 500ms ease;
 }
@@ -316,14 +320,19 @@ body {
   position: relative;
 
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   box-sizing: border-box;
   padding: 6px 0;
 
   text-align: center;
   color: #000000;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
+
 
 .user-link:focus {
   outline: none;
@@ -355,7 +364,7 @@ body {
 }
 
 .user-icon {
-
+  min-width: 10px;
   margin: 0;
   margin-right: 12px;
 }
@@ -371,13 +380,17 @@ body {
   left: 2px;
 
   box-sizing: border-box;
-  min-width: 21px;
-  min-height: 21px;
+  width: 21px;
+  height: 21px;
   padding: 2px;
 
   font-size: 14px;
   line-height: 17px;
   text-align: center;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
 
   background-color: #ffffff;
   border-radius: 50%;
@@ -417,6 +430,7 @@ body {
   background-repeat: no-repeat;
 }
 
+.user-item-cart:hover .popover-cart,
 .user-item-cart-open .popover-cart {
   display: block;
 }
@@ -689,6 +703,7 @@ body {
   opacity: 1;
 }
 
+.navigation-catalog:hover::after,
 .navigation-item-catalog:focus-within .navigation-catalog::after {
   background-image: url("../images/minus.svg");
 }
@@ -713,6 +728,7 @@ body {
   display: block;
 }
 
+.navigation-item-catalog:hover .popover-catalog,
 .navigation-item-catalog:focus-within .popover-catalog {
   display: block;
 }
@@ -1798,6 +1814,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .footer-navigation-link:hover {
@@ -2127,8 +2144,8 @@ body {
 
   width: 200px;
   height: 2px;
-  margin-top: 6px;
-  margin-bottom: 31px;
+  margin-top: 15px;
+  margin-bottom: 40px;
 
   background-color: #dcdcdc;
 }
@@ -2255,14 +2272,14 @@ body {
 
 .form-subsection {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
   padding-top: 12px;
 
   border-top: 2px solid #000000;
 }
 
 .form-subsection:last-of-type {
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 }
 
 .catalog-filter-group {
@@ -2273,7 +2290,7 @@ body {
 
 .catalog-filter-title {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
   padding: 0;
 
   font-weight: 700;
@@ -2292,7 +2309,7 @@ body {
 
 .catalog-filter-item {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 1px;
   padding: 0;
 }
 
@@ -2304,7 +2321,9 @@ body {
   position: relative;
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 8px 0;
+
+  cursor: pointer;
 }
 
 .control:hover {
@@ -2449,9 +2468,8 @@ body {
 }
 
 .sorting-button {
-  position: relative;
-
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
@@ -2462,8 +2480,6 @@ body {
 }
 
 .sorting-button-icon {
-  position: relative;
-  left: 10px;
   display: block;
 }
 
@@ -2647,7 +2663,7 @@ body {
   min-height: 55px;
   margin: 0 auto;
   margin-bottom: 44px;
-  padding: 16px 0;
+  padding: 16px 2px;
 
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -2719,7 +2735,7 @@ body {
   display: block;
   box-sizing: border-box;
   min-width: 40px;
-  padding: 10px 0;
+  padding: 10px 2px;
 
   font-size: 16px;
   line-height: 20px;
@@ -3003,6 +3019,8 @@ body {
 
 .field-amount {
   width: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
   font-family: 'Rubik';
   font-weight: 400;
   font-size: 16px;
@@ -3010,6 +3028,7 @@ body {
   text-align: center;
   appearance: textfield;
 }
+
 
 .field-amount:focus {
   outline: none;
@@ -3092,6 +3111,8 @@ body {
   background-color: #ffe17f;
   border: none;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .tooltip-icon {
