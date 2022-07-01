@@ -304,13 +304,12 @@ img {
   position: relative;
 
   display: flex;
-
   margin: 0;
   padding: 0;
 }
 
 .user-item:not(:last-child) {
-  margin-right: 7px;
+  margin-right: 12px;
 }
 
 .user-item:first-child {
@@ -321,56 +320,85 @@ img {
 .user-link {
   position: relative;
 
-  display: flex;
+  display: block;
   align-items: baseline;
   box-sizing: border-box;
   max-width: 150px;
   padding: 6px 4px;
+  padding-left: 27px;
 
   text-align: center;
   color: #000000;
+}
+
+.user-link:focus::after {
+  content: "";
+  position: absolute;
+
+  display: block;
+  left: 0;
+  right: 0;
+  top: 4px;
+  bottom: 4px;
+
+  outline: 2px solid #af4fff;
+}
+
+.user-link:focus {
+  outline: none;
+}
+
+.user-link.user-login {
+  max-width: none;
+  width: 155px;
+  margin-right: 21px;
+
+  text-align: left;
+
+  background-image: url("../images/icon-login.svg");
+  background-size: 15px 12px;
+  background-position: 1px 50%;
+  background-repeat: no-repeat;
 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.user-link:focus {
-  outline: 2px solid #af4fff;
-  outline-offset: -3px;
+.user-link.user-login:focus::after {
+  outline-offset: -2px;
 }
 
-.user-login {
-  max-width: 152px;
-  margin-right: 21px;
-}
-
-.user-logout {
+.user-link.user-logout {
+  padding-left: 0;
   margin: 0;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-icon {
-  min-width: 10px;
-  margin: 0;
-  margin-right: 12px;
-}
-
-.user-login .user-icon {
-  min-width: 15px;
+.user-compare {
+  background-image: url("../images/icon-compare.svg");
+  background-size: 10px 12px;
+  background-position: 5px 47%;
+  background-repeat: no-repeat;
 }
 
 .user-cart {
   position: relative;
-  left: 4px;
-  padding-left: 20px;
-  padding-right: 4px;
+
+  padding-left: 43px;
+
+  background-image: url("../images/icon-basket.svg");
+  background-size: 16px 14px;
+  background-position: 16px 40%;
+  background-repeat: no-repeat;
+
+  transform: translateX(4px);
 }
 
 .cart-items-number {
   position: absolute;
-  top: 10px;
-  left: 4px;
+  top: 50%;
+  left: 0;
 
   box-sizing: border-box;
   width: 21px;
@@ -387,6 +415,8 @@ img {
 
   background-color: #ffffff;
   border-radius: 50%;
+
+  transform: translateY(-50%);
 }
 
 /* cart popover  */
@@ -610,7 +640,7 @@ img {
 
 .navigation-item {
   position: relative;
-  margin-right: 25px;
+  margin-right: 44px;
 }
 
 .navigation-item:not(.navigation-item-catalog) {
@@ -622,7 +652,10 @@ img {
 }
 
 .navigation-item:last-child {
-  margin-right: -13px;
+  position: relative;
+  margin-right: 0;
+
+  transform: translateX(3px);
 }
 
 .navigation-link {
@@ -630,7 +663,7 @@ img {
 
   display: block;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 0;
 
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -646,20 +679,29 @@ img {
   position: absolute;
   top: 0;
   bottom: 6px;
-  left: 10px;
-  right: 12px;
+  left: 0;
+  right: 3px;
 
   display: block;
 
   border-bottom: 2px solid #000000;
 }
 
-.navigation-link:focus {
-  outline-offset: -8px;
+.navigation-link:not(.navigation-catalog):focus {
+  outline: none;
 }
 
-.navigation-link.navigation-link-current:focus {
-  outline-offset: -4px;
+.navigation-item:not(.navigation-item-catalog):focus-within::before {
+  content: "";
+  position: absolute;
+
+  display: block;
+  left: -2px;
+  right: 0;
+  top: 6px;
+  bottom: 5px;
+
+  outline: 2px solid #af4fff;
 }
 
 .navigation-link.navigation-catalog:focus {
@@ -947,7 +989,7 @@ img {
 
 .slider-pagination {
   position: absolute;
-  top: 363px;
+  bottom: 164px;
   right: -10px;
   z-index: 2;
 
@@ -1220,9 +1262,10 @@ img {
   z-index: 2;
 
   width: 280px;
-  padding-right: 120px;
+  padding-right: 17px;
+  padding-left: 17px;
 
-  text-align: center;
+  text-align: left;
   color: #ffe17f;
 
   background: #000000;
@@ -1303,6 +1346,7 @@ img {
   width: 100%;
   min-height: 100px;
   margin: 0;
+  padding: 0;
 
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -1354,7 +1398,7 @@ img {
 .rare-items-text {
   flex-grow: 1;
   margin: 0;
-  padding: 39px 0 37px 0;
+  padding: 39px 5px 37px 5px;
   text-align: center;
   vertical-align: center;
 }
@@ -1614,13 +1658,14 @@ img {
 .subscription-button {
   box-sizing: border-box;
   width: 253px;
-  padding: 16px 37px;
+  padding: 16px 5px;
 
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: transparent;
   border: 3px solid #c4c4c4;
