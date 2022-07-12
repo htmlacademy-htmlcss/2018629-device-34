@@ -37,6 +37,7 @@
                 name="search"
                 id="search"
                 placeholder="Текст поиска"
+                required
               >
             </div>
             <button
@@ -72,7 +73,6 @@
                 <span class="cart-items-number">2</span>
               </a>
               <div class="popover-cart">
-                <h2 class="visually-hidden">Корзина</h2>
 
                 <div class="popover-cart-item">
                   <a
@@ -637,6 +637,7 @@
                   type="email"
                   name="subscription-email"
                   placeholder="Ваш e-mail"
+                  required
                 >
               </label>
               <button
@@ -857,6 +858,7 @@
                 id="delivery-email"
                 name="client-email"
                 placeholder="Введите ваш e-mail"
+                required
               >
               <span class="error-message">Забавный у вас адрес</span>
             </div>
@@ -936,8 +938,10 @@
                   type="number"
                   id="delivery-amount"
                   name="amount"
-                  value="1"
+                  min="1"
+                  placeholder="1"
                 >
+                <div class="amount-error"></div>
                 <button
                   class="amount-button amount-more"
                   type="button"
