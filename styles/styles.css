@@ -2569,6 +2569,35 @@ img {
   list-style-type: none;
 }
 
+.products-card {
+  position: relative;
+}
+
+.products-card-new::after {
+  content: "new";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  z-index: 0;
+
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 20px 0;
+
+  font-family: 'Raleway';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.6)
+
+}
+
 .products-card-link {
   position: relative;
 
@@ -2619,6 +2648,7 @@ img {
   position: absolute;
   top: 170px;
   left: 70px;
+  z-index: 3;
 
   visibility: hidden;
   display: block;
@@ -2644,6 +2674,7 @@ img {
   visibility: hidden;
 
   position: absolute;
+  z-index: 2;
 
   display: block;
   width: 360px;
